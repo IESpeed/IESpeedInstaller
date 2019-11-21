@@ -1,11 +1,11 @@
 @echo off
 echo -------------------------------------------------------
-echo  Installing IESpeed ActiveX control
+echo  Installing IEspeed ActiveX control
 echo -------------------------------------------------------
 echo.
 set STAGEDIR=%~dp0
 set SOURCEDIR=%STAGEDIR%\Release
-set LOCALDIR=%PROGRAMFILES(x86)%\IESpeed
+set LOCALDIR=%PROGRAMFILES(x86)%\IEspeed
 set DOTNETPATH=%SYSTEMROOT%\Microsoft.NET\Framework\v4.0.30319\
 
 echo SOURCE DIR: %SOURCEDIR%
@@ -32,7 +32,7 @@ if errorLevel 8 (
 	exit
 )
 
-%DOTNETPATH%\Regasm "%LOCALDIR%\IESpeedLibrary.dll" /tlb /codebase
+%DOTNETPATH%\Regasm "%LOCALDIR%\IEspeedLibrary.dll" /tlb /codebase
 
 regedit /s "%STAGEDIR%\iespeed_mark_as_safe.reg"
 
@@ -46,7 +46,7 @@ if errorLevel 1 (
 
 echo.
 echo -------------------------------------------------------
-echo SUCESSFULLY installed IESpeed
+echo SUCESSFULLY installed IEspeed
 echo -------------------------------------------------------
 echo.
 

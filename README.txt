@@ -1,7 +1,7 @@
 IEspeed is an ActiveX wrapper around CefSharp which speeds up web pages running in IE.
 
 In order to install simply run the install.cmd script. 
-This will register the IESpeedLibrary.dll in the registry.
+This will register the IEspeedLibrary.dll in the registry.
 
 Compiled for x86.
 
